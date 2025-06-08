@@ -4,14 +4,14 @@
 <head>
 
   <!-- SEO  -->
-  <title>My First Tailwind Project</title>
+  <title>Bold and Bright</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Flavors&family=Modak&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap" rel="stylesheet">
   <!-- TAILWIND -->
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -24,7 +24,6 @@
             navy: '#003ea1',
             bright: '#3A86FF',
             focus: '#ff006e',
-            byellow: '#ffbe0b',
           }
         }
       }
@@ -59,16 +58,15 @@
 
   <!------------------------------------------------------- Header ------------------------------------------------->
   <header class="relative uppercase font-light px-8 py-4  flex md:flex-row md:justify-between text-white">
+
     <nav class="flex gap-3">
-      <a href="/index.html" class="inline-block py-2 px-3 rounded-full hover:bg-focus"> Logo</a>
-      <a href="/figma.html" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Figma</a>
-      <a href="/rounded.html" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Round</a>
-      <a href="#" class="hidden md:inline-block p-1 rounded-full hover:bg-focus">Nav 3</a>
+      <a href="/index.html" class="inline-block py-1 px-7 rounded-full hover:bg-focus"> Logo</a>
     </nav>
-    <button class="hidden md:inline-block border-2 rounded-full py-1 px-7 hover:bg-focus"> Contact Us</button>
+
+    <button class="hidden md:inline-block border-2 rounded-full py-1 px-7 hover:bg-focus hover:border-focus"> Contact Us</button>
   </header>
 
-  <!------------------------------------------------------- Banner Section ---------------------------------------->
+  <!------------------------------------------------------- Hero Banner Section ---------------------------------------->
   <div class="relative grow flex flex-col justify-center items-center text-center">
     <h1 class="text-white playful-font text-6xl lg:text-[9rem] max-w-xl leading-none">This is a heading</h1>
     <h2 class="tracking-widest lg:tracking-[1rem] text-3xl lg:text-4xl uppercase font-bold"> Subheading</h2>
@@ -101,12 +99,20 @@
 <!------------------------------------------------------- Card Section ---------------------------------------->
 
 <section class="container mx-auto p-20">
-    <h2 class="text-center uppercase">Duis Aute Irure</h2>
-    <div class="grid sm:grid-cols-3">
+    <h2 class="text-center uppercase titan-one text-5xl tracking-wide pb-4">About Our Design</h2>
+    <div class="grid sm:grid-cols-3 gap-10">
         <div class="">
-            <img class="w-full rounded-t-[50vw] sm:rounded-t-[25vw] rounded-b-[2rem] aspect-[5/9] lg:aspect-[6/9] object-cover" src="https://images.unsplash.com/photo-1551298698-66b830a4f11c?q=80&w=3115&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem totam sit, repellendus deleniti assumenda unde. Sapiente consequatur cupiditate delectus voluptatem possimus velit voluptates aliquam at reiciendis, praesentium autem alias.</p>
+            <img class="w-full rounded-t-[50vw] sm:rounded-t-[25vw] rounded-b-[2rem] aspect-[5/9] lg:aspect-[6/9] object-cover" src="/images/bold-9.jpg"">
+            <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem totam sit, repellendus deleniti assumenda unde. Sapiente consequatur cupiditate delectus voluptatem possimus velit voluptates aliquam at reiciendis, praesentium autem alias.</p>
         </div>
+        <div class="">
+          <img class="w-full rounded-t-[50vw] sm:rounded-t-[25vw] rounded-b-[2rem] aspect-[5/9] lg:aspect-[6/9] object-cover" src="https://images.unsplash.com/photo-1551298698-66b830a4f11c?q=80&w=3115&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+          <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem totam sit, repellendus deleniti assumenda unde. Sapiente consequatur cupiditate delectus voluptatem possimus velit voluptates aliquam at reiciendis, praesentium autem alias.</p>
+      </div>
+      <div class="">
+        <img class="w-full rounded-t-[50vw] sm:rounded-t-[25vw] rounded-b-[2rem] aspect-[5/9] lg:aspect-[6/9] object-cover" src="/images/bold-2.jpg">
+        <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptatem totam sit, repellendus deleniti assumenda unde. Sapiente consequatur cupiditate delectus voluptatem possimus velit voluptates aliquam at reiciendis, praesentium autem alias.</p>
+    </div>
          
 
     </div>
@@ -164,13 +170,13 @@
     <path d="M2192 31.6148C2100.67 31.6148 2100.67 111 2009.31 111C1917.96 111 1917.98 31.6148 1826.63 31.6148C1735.27 31.6148 1735.29 111 1643.96 111C1552.63 111 1552.63 31.6148 1461.29 31.6148C1369.96 31.6148 1369.96 111 1278.63 111C1187.29 111 1187.29 31.6148 1095.96 31.6148C1004.63 31.6148 1004.63 111 913.293 111C821.959 111 821.959 31.6148 730.626 31.6148C639.293 31.6148 639.293 111 547.959 111C456.626 111 456.626 31.6148 365.293 31.6148C273.959 31.6148 273.959 111 182.646 111C91.3333 111 91.3333 31.6148 0 31.6148V0H1096H2192V31.6148Z"/>
     </svg>
 
-  <div class="grid grid-cols-2 py-20 bg-orange-500 gap-10"> 
+  <div class="grid md:grid-cols-2 py-20 bg-orange-500 gap-10"> 
       <div class="px-10 flex flex-col items-center">
           <h2 class="tracking-widest lg:tracking-[1rem] text-2xl lg:text-2xl uppercase font-bold">Contact Us</h2>
-          <p class="max-w-[312px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at dolor eum numquam est facere esse,</p>
+          <p class="max-w-[312px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis at dolor eum numquam est facere esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni molestiae placeat ab similique harum necessitatibus quas excepturi culpa maiores, quia dolore fugit exercitationem saepe facere sequi reprehenderit reiciendis consectetur?</p>
       </div>
       <div>
-        <form class="max-w-lg">
+        <form class="max-w-lg p-4 md:p-0">
       
           <label class="uppercase pt-4 px-3" for="_name"> Name </label>
           <input class="w-full mb-2 border-2 border-pink-300 rounded-2xl bg-pink-300 focus:border-orange-400 outline-none py-1 px-3 placeholder:text-white placeholder:opacity-30 placeholder:text-sm" type="text" name="_name" id="_name" placeholder="Name" />
@@ -181,7 +187,7 @@
           <label class="uppercase pt-4 px-3" for="message"> Message </label>
           <textarea class="w-full mb-2 border-2 border-pink-300 rounded-2xl bg-pink-300 focus:border-orange-400 outline-none py-2 px-3 placeholder:text-white placeholder:opacity-30 placeholder:text-sm resize-none" name="message" id="message" placeholder="Hey I want to learn to code..." rows="6"></textarea>
         <div class="text-right">
-          <button class="bg-black text-white px-10 py-1 text-sm uppercase hover:bg-orange-400 hover:text-white rounded-full" type="submit"> Send </button>
+          <button class="bg-black text-white px-10 py-1 text-sm uppercase hover:bg-focus hover:text-white rounded-full" type="submit"> Send </button>
         </div>
         </form> 
       </div>
@@ -198,42 +204,42 @@
 
 <!------------------------------------------------------- Footer Section ---------------------------------------->
 
-<footer class="flex justify-between container mx-auto px-6 py-10 uppercase text-sm">
+<footer class="md:flex justify-between container mx-auto px-6 py-10 uppercase text-sm">
   <div class="flex gap-6">
     <div>
       <h3 class="">Lorem Ipsum</h3>
       <ul class="font-light space-y-1">
-        <li class="w-36"><a href="#" class="hover:text-byellow hover:font-bold">Dolor sit amet</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">Consectetur</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">Adipiscing elit</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">ed do</a></li>
+        <li class="w-36"><a href="#" class="hover:text-yellow-700 hover:font-bold">Dolor sit amet</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Consectetur</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Adipiscing elit</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">ed do</a></li>
       </ul>
     </div>
     <div>
         <h3 class="">Lorem Ipsum</h3>
         <ul class="font-light space-y-1">
-          <li class="w-36"><a href="#" class="hover:text-byellow hover:font-bold">Dolor sit amet</a></li>
-          <li><a href="#" class="hover:text-byellow hover:font-bold">Consectetur</a></li>
-          <li><a href="#" class="hover:text-byellow hover:font-bold">Adipiscing elit</a></li>
-          <li><a href="#" class="hover:text-byellow hover:font-bold">ed do</a></li>
+          <li class="w-36"><a href="#" class="hover:text-yellow-700 hover:font-bold">Dolor sit amet</a></li>
+          <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Consectetur</a></li>
+          <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Adipiscing elit</a></li>
+          <li><a href="#" class="hover:text-yellow-700 hover:font-bold">ed do</a></li>
         </ul>
       </div>
-    <div>
+    <div class="hidden md:block">
       <h3 class="">Lorem Ipsum</h3>
       <ul class="font-light space-y-1">
-        <li class="w-36"><a href="#" class="hover:text-byellow hover:font-bold">Dolor sit amet</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">Consectetur</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">Adipiscing elit</a></li>
-        <li><a href="#" class="hover:text-byellow hover:font-bold">ed do</a></li>
+        <li class="w-36"><a href="#" class="hover:text-yellow-700 hover:font-bold">Dolor sit amet</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Consectetur</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">Adipiscing elit</a></li>
+        <li><a href="#" class="hover:text-yellow-700 hover:font-bold">ed do</a></li>
       </ul>
     </div>
   </div>
   <div>
-    <p>Subscribe to our newsletter</p>
+    <p class="pt-8 md:pt-0">Subscribe to our newsletter</p>
     <form class="flex flex-col">
         <label class="uppercase sr-only" for="_replyto"> Email </label>
         <input class="rounded-2xl border-2 border-orange-500 bg-orange-500 focus:border-focus outline-none py-1 px-2 placeholder:text-white placeholder:opacity-30" type="email" name="_replyto" id="_replyto" placeholder="Email" />
-        <div class="text-right">
+        <div class="md:text-right">
             <button class="bg-black text-white px-5 py-1 text-sm uppercase hover:bg-focus hover:text-white my-4 rounded-full" type="submit">Subscribe</button>
         </div>
       </form> 
